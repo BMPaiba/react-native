@@ -4,7 +4,13 @@ module.exports = {
   content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}", "./app/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'cascadia-black': ['CascadiaCode-Bold', 'sans-serif'],
+        'cascadia-medium': ['CascadiaCode-Medium', 'sans-serif'],
+        'cascadia-light': ['CascadiaCode-Light', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
