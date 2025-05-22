@@ -5,12 +5,12 @@ import { Link } from "expo-router";
 export default function index() {
   return (
     <View className="flex-1 items-center justify-center bg-primary">
-      <Text className="font-cascadia-light text-5xl text-blue-100">Hola como andas? maestro</Text>
+      <Text className="font-cascadia-light text-5xl text-blue-100">HOME</Text>
       <Link href="./products">
         <Text className="text-red-100 font-cascadia-light text-2xl">Ir a productos</Text>
       </Link>
-      <Link href="./home">
-        <Text className="text-red-100 font-cascadia-light text-2xl">Ir al home</Text>
+      <Link href="/">
+        <Text className="text-red-100 font-cascadia-light text-2xl">Ir al inicio</Text>
       </Link>
     </View>
   );

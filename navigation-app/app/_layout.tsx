@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import React, { useEffect } from "react";
 import { Slot, SplashScreen } from "expo-router";
 import "./global.css";
@@ -21,7 +21,11 @@ const RootLayout = () => {
 
   if (!fontsLoaded && !error) return null;
 
-  return <Slot />;
+  return (
+    <SafeAreaView className=" flex-1 bg-primary">
+      <Slot />
+    </SafeAreaView>
+  )
 };
 
 export default RootLayout;
